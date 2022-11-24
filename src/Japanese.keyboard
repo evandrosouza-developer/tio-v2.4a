@@ -1,0 +1,24 @@
+     Y=0   Y=1   Y=2   Y=3   Y=4   Y=5   Y=6   Y=7   Y=8   Y=9  Y=10  Y=11
+X=0; $  )  ; $  *  ; $  "  ; $  C  ; $  K  ; $  S  ; $SHIFT; $ F9  ; $Space; $NUM *; $NUM 5; $     
+X=0; $  0  ; $  8  ; $  '  ; $  c  ; $  k  ; $  s  ; $SHIFT; $ F4  ; $Space; $NUM *; $NUM 5; $     
+
+X=1; $  !  ; $  (  ; $  ^  ; $  D  ; $  L  ; $  T  ; $CTRL ; $ F10 ; $ CLS ; $NUM +; $NUM 6; $     
+X=1; $  1  ; $  9  ; $  '  ; $  d  ; $  l  ; $  t  ; $CTRL ; $ F5  ; $HOME ; $NUM +; $NUM 6; $     
+
+X=2; $  @  ; $  _  ; $  <  ; $  E  ; $  M  ; $  U  ; $GRAPH; $ ESC ; $ INS ; $NUM /; $NUM 7; $     
+X=2; $  2  ; $  -  ; $  ,  ; $  e  ; $  m  ; $  u  ; $GRAPH; $ ESC ; $ INS ; $NUM /; $NUM 7; $     
+
+X=3; $  #  ; $  +  ; $  >  ; $  F  ; $  N  ; $  V  ; $CAPS ; $ TAB ; $ DEL ; $NUM 0; $NUM 8; $     
+X=3; $  3  ; $  =  ; $  .  ; $  f  ; $  n  ; $  v  ; $CAPS ; $ TAB ; $ DEL ; $NUM 0; $NUM 8; $     
+
+X=4; $  $  ; $  |  ; $  ?  ; $  G  ; $  O  ; $  W  ; $CODE ; $STOP ; $LEFT ; $NUM 1; $NUM 9; $     
+X=4; $  4  ; $  \  ; $  /  ; $  g  ; $  o  ; $  w  ; $CODE ; $STOP ; $LEFT ; $NUM 1; $NUM 9; $     
+
+X=5; $  %  ; $  {  ; $DEAD ; $  H  ; $  P  ; $  X  ; $ F6  ; $ BS  ; $ UP  ; $NUM 2; $NUM -; $     
+X=5; $  5  ; $  [  ; $DEAD ; $  h  ; $  p  ; $  x  ; $ F1  ; $ BS  ; $ UP  ; $NUM 2; $NUM -; $     
+
+X=6; $  ^  ; $  }  ; $  A  ; $  I  ; $  Q  ; $  Y  ; $ F7  ; $SLCT ; $DOWN ; $NUM 3; $NUM ,; $     
+X=6; $  6  ; $  ]  ; $  a  ; $  i  ; $  q  ; $  y  ; $ F2  ; $SLCT ; $DOWN ; $NUM 3; $NUM ,; $     
+
+X=7; $  &  ; $  :  ; $  B  ; $  J  ; $  R  ; $  Z  ; $ F8  ; $ENTER; $RIGHT; $NUM 4; $NUM .; $     
+X=7; $  7  ; $  ;  ; $  b  ; $  j  ; $  r  ; $  z  ; $ F3  ; $ENTER; $RIGHT; $NUM 4; $NUM .; $     
