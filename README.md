@@ -190,7 +190,17 @@ ctrl-t ? to list the available key commands.
 [20:19:12.041]  ctrl-t U       Toggle conversion to uppercase
 [20:19:12.041]  ctrl-t v       Show version
 [20:19:12.041]  ctrl-t ctrl-t  Send ctrl-t character
+[20:19:12.041]  ctrl-t S       Send ASCII file (at current directory)
+[20:19:12.041]  ctrl-t K       Shows parallel keyboard logical layout and reads its activity
 ```
+
+Observation:
+1. The last function is to be used with MSX Keyboad System Emulator, to
+assure that the keyboard maping was done correctly. To use this functionality
+you have to build an updated msx.keyboard available at current directory.
+2. To build the msx.keyboard, please see the HotBit_HB8000.keyboard, 
+ExpertXP800.keyboard and Japanese.keyboard example files inside parallel_keyb
+directory.
 
 If needed, the prefix key (ctrl-t) can be remapped via configuration file.
 

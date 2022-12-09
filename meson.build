@@ -1,12 +1,12 @@
 project('tio', 'c',
-    version : '2.4a',
+    version : '2.5a',
     license : [ 'GPL-2'],
     meson_version : '>= 0.53.2',
     default_options : [ 'warning_level=2', 'buildtype=release', 'c_std=gnu99' ]
 )
 
 # The tag date of the project_version(), update when the version bumps.
-version_date = '2022-10-18'
+version_date = '2022-11-02'
 
 # Test for dynamic baudrate configuration interface
 compiler = meson.get_compiler('c')

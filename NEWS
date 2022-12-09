@@ -1,34 +1,33 @@
 
-=== tio v2.4a ===
+=== tio v2.4 ===
+
 
 
 Changes since tio v2.3:
 
- * Add ASCII file transfer (^T f). This is called from the terminal session and
-   returns to the same terminal session to allow continue the interaction.
-   
- * Add visualize parallel keyboard key pressing and releasing. To be used to do 
-   an offline testing of the MSX Keyboard System Enviroment, through (^T k). As
-   ASCII file transfer, it starts and ends (Esc quits) inside the terminal session.
-   Vide https://github.com/evandrosouza-developer. These will be used all together:
-   - PS/2 Keyboard;
-   - PS/2 to MSX Converter;
-   - MSX Keyboard Subsystem Emulator;
-   - tio v2.4a.
-   The technical embasement is made the select call with timeout=0 from STDIN_FILENO and fd_tty.
-   The send chars are read from file, and each one sent is followed by a polling using select.
-   
- * These updates was made in the following files:
-   - tio/src/tty.c and tio/src/tty.h: All modifications have my name in comments;
-   - tio/src/extension.c and tio/src/extension.h: New files have the objective
-     to minimize changes in tty.c/h;
-   - tio/src/meson.build: To add tio/src/extension.c and tio/src/extension.h;
-   - tio/meson.build: To add version : '2.4a';
-   
- * Adds the MSX keyboard map, file that have to be in current directory:
-   - msx.keyboard.
-   These additional files are the examples of msx.keyboard configuration:
-   - Japanese.keyboard, ExpertXP800.keyboard and HotBit_HB8000.keyboard.
+ * Add threaded input handling
+
+   To make tio more responsive to quit and I/O flush key command when main I/O
+   thread is blocked on output.
+
+ * Fix so that is it possible to quit tio in tio etc.
+
+   Fix regression so that it is possible to send the prefix key code to the
+   remote tio session without local tio session reacting to same key code
+   (quitting etc.).
+
+ * Add key command to toggle log on/off
+
+    Add key command 'ctrl-t f' which will toggle log on/off.
+
+    If no log filename has been specified via the 'log-filename' option then
+    tio will automatically generate a new log filename every time the log
+    feature is toggled on. Meaning, when toggled multiple times, multiple
+    log files will be generated.
+
+    However, if a log filename has been specified, tio will only write and
+    append to that same file.
+
 
 
 Changes since tio v2.2:
